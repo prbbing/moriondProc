@@ -21,8 +21,9 @@
 \def\PRL{\em Phys. Rev. Lett.}
 \def\PRD{{\em Phys. Rev.} D}
 \def\ZPC{{\em Z. Phys.} C}
-\def\JINST{JINST}
-\def\JHEP{JHEP}
+\def\JINST{\em JINST}
+\def\JHEP{\em JHEP}
+\def\EPJC{\em EPJC}
 
 % Some other macros used in the sample text
 \def\st{\scriptstyle}
@@ -30,7 +31,9 @@
 \def\mco{\multicolumn}
 \def\epp{\epsilon^{\prime}}
 \def\vep{\varepsilon}
+\def\mt{m_{\textrm{T}}}
 \def\et{E_\textrm{T}^{\textrm{miss}}}
+\def\ptmiss{\vec{p}_\textrm{T}^{\textrm{miss}}}
 \def\ra{\rightarrow}
 \def\ppg{\pi^+\pi^-\gamma}
 \def\vp{{\bf p}}
@@ -51,10 +54,8 @@
 %                                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\Photo}{\includegraphics[height=35mm]{mypicture}}
-
 \begin{document}
-\vspace*{4cm}
+\vspace*{0cm}
 \title{Searches for exotic Dark Matter at ATLAS and CMS}
 
 
@@ -98,7 +99,7 @@ Higgs~\cite{DarkH} and dark photon~\cite{DarkPh}. In the meantime, the
 theoretical framework has also advanced in the past decades, taking the
 experiment results into account.  As a consequence, more models have thrived,
 encouraging both CMS and ATLAS to provide more interpretations. In paricular,
-the 2HDM + a model~\cite{2HDM} is widely considered in recent searches.
+the 2HDM+a model~\cite{2HDM} is widely considered in recent searches.
 Figure~\ref{fig:diagrams} shows the diagrams of the models mentioned a bove.
 
 \begin{figure} [htb]
@@ -111,12 +112,13 @@ Figure~\ref{fig:diagrams} shows the diagrams of the models mentioned a bove.
 \begin{minipage}{0.32\linewidth}
 \centerline{\includegraphics[width=0.9\linewidth]{MonoSVVDiagram}}
 \end{minipage}
-\caption[]{Diagrams of various models considered in recent DM searches. Left: A Higgs boson is produced in association with a pseudo-scalar decaying to DM candidates (2HDM + a); middle: a Higgs boson is produced in the VHF channel, decaying to a photon and a dark photon; right: a dark Higgs s is produced in association with a $Z/pime$, where the $Z/prime$ decays to DM candidates and the dark higgs s decays to two vectro bosons.}
+\caption[]{Diagrams of various models considered in recent DM searches. Left: A Higgs boson is produced in association with a pseudo-scalar decaying to DM candidates (2HDM+a); middle: a Higgs boson is produced in the VHF channel, decaying to a photon and a dark photon; right: a dark Higgs s is produced in association with a $Z/pime$, where the $Z/prime$ decays to DM candidates and the dark higgs s decays to two vectro bosons.}
 \label{fig:diagrams}
 \end{figure}
 
 Recent results from both CMS and ATLAS will be summarized in the next section
-followed by an outlook on the future DM seearch programs at the LHC.
+followed by an outlook on the future DM seearch programs at the LHC. All
+searches discussed in this article use full Run 2 dataset. 
 
 \section{Dedicated search results}
 
@@ -124,17 +126,21 @@ followed by an outlook on the future DM seearch programs at the LHC.
 
 Mono-jet search is the flagship analysis in the DM regime as its simple final
 state covers a large range of parameter space, sensitive to many different
-models. The recent ATLAS mono-jet search uses full Run 2 ATLAS data with an
-integrated luminosity of 139 $\textrm{fb}^{-1}$, collected by a $\et$\ trigger.
-The events are required to have at least one jet with transverse momentum
-($\pt$) greater than 150 GeV and not have leptons or photons present. Signal
-regions are divided by $\et$\ starting at 200 GeV. Various control regions are
-constructed by including leptons in the selections to constrain the background
-contributions via a simultaneous fit. 
+models. The recent ATLAS mono-jet search~\cite{monojet} uses data collected by a $\et$\
+trigger. The events are required to have at least one energetic jet and not
+have leptons or photons present. Signal regions are divided by $\et$\.
 
-Mono-$Z$ can be carried out in either the leptonic or hadronic final states.
-The recent CMS mono-$Z$ search considers the leptonic final state where the $Z$
-boson decays to either a pair of muons or electrons.  
+Mono-$Z$ is also a very important inclusive search. The recent CMS mono-$Z$
+search~\cite{monoz} considers the leptonic final state where the $Z$ boson
+decays to either a pair of muons or electrons. Events are collected by dimuon
+(dielectron) triggers and must contain two well-identified, isolated muons
+(electrons) with the same flavor and opposite charge, forming an invariant mass
+compatible with the $Z$ boson mass. Events with additioanl leptons, more than
+one jet or any $b$-tagged jets are vetoed to supress the backgrounds. Signal
+regions are constructed based on either the missing transverse momentum,
+$\ptmiss$, or the transverse mass between the di-lepton system and $\ptmiss$,
+$\mt$. The latter one is optimized for 2HDM+a model as there is a peak in $\mt$
+spectrum near the neutral scalar (H) mass. 
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
@@ -146,6 +152,20 @@ boson decays to either a pair of muons or electrons.
 \caption[]{}
 \label{fig:mono_jet_z}
 \end{figure}
+
+Both the mono-jet and mono-$Z$ search considers well know detectable standard
+model (SM) physic objects. Searches considering less well known SM particles
+such as the Higgs boson or new BSM particles such as a new scalar target the
+specific phase space, facing different experimental challenges. The recent
+ATLAS mono-Higgs($\rightarrow b\overline{b}$) search~\cite{monoh} considers events collected by the
+primary $\et$\ triggers. Events are required to have sizable $\et$\ and veto
+isolated leptons. The signal regions are categorized by the $b$-tagged
+multiplicity (two or three) and the collinearity of the two $b$-tagged jets
+forming the Higgs candidate (merged and resolved). The ATLAS
+mono-s($\rightarrow VV$) search~\cite{monos} probes a similar final states with sizable
+$\et$\ but looks for hadronic boson decays instead of $b$-hadron decays. Events
+must contain two boson tagged jets, and the signal regions are categorized by
+their collinearity (merged and intermediate).    
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
@@ -159,6 +179,22 @@ boson decays to either a pair of muons or electrons.
 \end{figure}
 
 \subsection{Dark photon search in the VBF channel}
+
+As the most recently discovered SM particle, the Higgs boson opens up an
+interesting avenue for DM search, not only because it can be produced in
+association with DM particles but also it can decay to DM particles. The
+Higgs$\rightarrow inv$) branching ratio is a critical channel to study the
+phase space where $m_{i\textrm{DM}} < \frac{1}{2}m_{\textrm{H}}$. The combined
+Higgs$\rightarrow inv$ branching ratio measurement~\cite{hiv} sets a stringent upper limit
+of 0.11 at 95\% CL. Recent ATLAS~\cite{atlasvbf} and CMS~\cite{cmsvbf} searches explored another unique
+scenario where the Higgs decays to a dark photon and a photon, which gives
+sizable $\et$\ and a photon in the final state. Both searches consider the VBF
+production channel given its larger cross section, applying similar event
+selections such as containing VBF jets and lepton veto. The $\mt$\ between the
+photon and the $\ptmiss$\ is used as the discriminat variable to categorize the
+signal regions. It is worth mentioning that ATLAS applies a lower photon
+$p_{\textrm{T}}$ threshold and additional jet centrality cuts to achieve better
+stronger exclusion limits.  
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
@@ -186,8 +222,6 @@ boson decays to either a pair of muons or electrons.
 \section*{References}
 
 \begin{thebibliography}{99}
-\bibitem{ja}C Jarlskog in {\em CP Violation}, ed. C Jarlskog
-(World Scientific, Singapore, 1988).
 
 \bibitem{LHCRef}L. Evans and P. Bryant (editors), \Journal{\JINST}{3}{S08001}{2008}.
 
@@ -200,6 +234,22 @@ boson decays to either a pair of muons or electrons.
 \bibitem{DarkPh}Biswas, Sanjoy and Gabrielli, Emidio and Heikinheimo, Matti and Mele, Barbara, \Journal{\PRD}{93}{093011}{2016}.
 
 \bibitem{2HDM}Bauer, M., Haisch, U. and Kahlhoefer, F., \Journal{\JHEP}{05}{138}{2017}.
+
+\bibitem{monojet}ATLAS Collaboration, CERN-EP-2020-238, https://cds.cern.ch/record/2752675.
+
+\bibitem{monoz}CMS Collaboration, \Journal{\EPJC}{81}{13}{2021}.
+
+\bibitem{monoh}ATLAS Collaboration, ATLAS-CONF-2021-006, http://cdsweb.cern.ch/record/2759211. 
+
+\bibitem{monos}ATLAS Collaboration, \Journal{\PRL}{126}{121802}{2021} 
+
+\bibitem{hinv}ATLAS Collaboration, ATLAS-CONF-2020-052, https://cds.cern.ch/record/2743055.
+
+\bibitem{cmsvbf}CMS Collaboration, \Journal{\JHEP}{03}{011}{2021}.
+
+\bibitem{atlasvbf}ATLAS Collaboration, ATLAS-CONF-2021-004, http://cdsweb.cern.ch/record/2758212.
+
+\bibitem{dmbb}ATLAS Collaboration, CERN-EP-2021-001, https://cds.cern.ch/record/2750578.
 
 \end{thebibliography}
 
