@@ -2,9 +2,12 @@
 %                  MORIOND.TEX                                       %
 %====================================================================%
 
+
+
 \documentclass{moriond}
 
-
+\usepackage{lineno}
+\linenumbers
 \bibliographystyle{unsrt}    
 % for BibTeX - sorted numerical labels by order of
 % first citation.
@@ -72,12 +75,12 @@ providing critical missing pieces to the puzzle. In this article, recent exotic 
 
 \section{Introduction}
 
-The nature of DM remains a mystery and there are many Beyond Standard Model
-(BSM) theories proposed to give an explanation. LHC~\cite{LHCRef} offers a
-unique opportunity to search for dark matter (DM) and related new particles at
+The nature of dark matter (DM) remains a mystery and there are many Beyond Standard Model
+(BSM) theories proposed to provide an explanation. The Large Hadron Collider (LHC)~\cite{LHCRef} offers a
+unique opportunity to search for DM and related new particles at
 the high energy frontier. ATLAS~\cite{ATLASRef} and CMS~\cite{CMSRef} are the
 two general-purpose detectors at the LHC that are capable of searching for new
-particles using a rich set of experimental signatures. Both experiments have carried out
+particles using a large set of experimental signatures. Both experiments have carried out
 comprehensive dedicated DM search programs.
 
 %\begin{itemize}
@@ -89,11 +92,11 @@ comprehensive dedicated DM search programs.
 %\end{itemize}    
 
 The full LHC Run 2 data brings higher
-precision to inclusive DM searches such as the mono-jet, mono-$Z$ and
-mono-Higgs searches. More final states are being explored with aid from
+sensitivities to inclusive DM searches such as the mono-jet, mono-$Z$ and
+mono-Higgs searches. More final states are being explored with the help of
 innovative analysis techniques, motivated by theories such as dark
-Higgs~\cite{DarkH} and dark photon~\cite{DarkPh}. In the meantime, the
-theoretical framework has also advanced in the past decade, taking the
+Higgs~\cite{DarkH} and dark photon~\cite{DarkPh}. The
+theoretical framework has also advanced in the past decade, taking previous
 experimental results into account. As a consequence, more models have thrived,
 encouraging both CMS and ATLAS to provide more interpretations. In particular,
 the 2HDM+a model~\cite{2HDM} is widely considered in recent searches.
@@ -109,7 +112,7 @@ Figure~\ref{fig:diagrams} shows the diagrams of the models mentioned above.
 \begin{minipage}{0.32\linewidth}
 \centerline{\includegraphics[width=0.7\linewidth]{MonoSVVDiagram}}
 \end{minipage}
-\caption[]{Diagrams of various models considered in recent DM searches. Left: A Higgs boson is produced in association with a pseudo-scalar (a) decaying to DM candidates (2HDM+a); middle: a Higgs boson is produced in the VHF channel, decaying to a photon and a dark photon; right: a dark Higgs s is produced in association with a $Z\prime$, where the $Z\prime$ decays to DM candidates and the dark Higgs decays to two vector bosons.}
+\caption[]{Diagrams of various models considered in recent DM searches. Left: A Higgs boson is produced in association with a pseudo-scalar (a) decaying to DM candidates (2HDM+a); middle: a Higgs boson is produced in the VHF channel, decaying to a photon and a dark photon; right: a dark Higgs s is produced in association with a $Z^{\prime}$, where the $Z^{\prime}$ decays to DM candidates and the dark Higgs decays to two vector bosons.}
 \label{fig:diagrams}
 \end{figure}
 
@@ -121,13 +124,13 @@ searches discussed in this article use full Run 2 dataset.
 
 \subsection{Mono-X searches}
 
-Mono-jet search is the flagship analysis in the DM regime as its simple final
+The mono-jet search is the flagship analysis in the DM search program as its final
 state covers a large range of the parameter space, sensitive to many different
-models. The recent ATLAS mono-jet search~\cite{monojet} uses data collected by a missing transverse energy, $\et$\,
+models. The recent ATLAS mono-jet search~\cite{monojet} uses data collected by a missing transverse energy, $\et$,
 trigger. The events are required to have at least one energetic jet and not
-have leptons or photons present. Signal regions are divided by $\et$\ and various control regions are constructed by allowing leptons. A simultaneous fit is performed in both the signal regions and control regions, and the resulting discriminant spectrum expected from the background is compared with the data to determine whether there are significant deviations in data. This is a common procedure adopted by all the searches discussed in this article.
+have leptons or photons present. Signal regions are divided by $\et$\ and various control regions are constructed by allowing leptons. A simultaneous fit is performed in both the signal regions and control regions, and the resulting discriminant spectrum expected from the background is compared with data to determine whether there are significant deviations in the latter. This simultaneous fit strategy is a common procedure adopted by all the searches discussed in this article.
 
-Mono-$Z$ is also a very important inclusive search. The recent CMS mono-$Z$
+The mono-$Z$ search is also a very important inclusive analysis. The recent CMS mono-$Z$
 search~\cite{monoz} considers the leptonic final state where the $Z$ boson
 decays to either a pair of muons or electrons. Events are collected by di-muon
 (di-electron) triggers and must contain two well-identified, isolated muons
@@ -136,101 +139,104 @@ compatible with the $Z$ boson mass. Events with additional leptons, more than
 one jet or any $b$-tagged jets are vetoed to suppress the backgrounds. Signal
 regions are constructed based on either the missing transverse momentum,
 $\ptmiss$, or the transverse mass between the di-lepton system and $\ptmiss$,
-$\mt$. The latter one is optimized for 2HDM+a model as there is a peak in $\mt$
+$\mt$. The latter region is optimized for 2HDM+a model as there is a peak in $\mt$
 spectrum near the neutral scalar (H) mass.
 
-Both the mono-jet and mono-$Z$ searches have data observation compatible with the background estimation, therefore up limits are set on specific models as the examples shown in Figure~\ref{fig:mono_jet_z}. 
+Both the mono-jet and mono-$Z$ searches have data observation compatible with the background estimations and upper limits are set on specific models as the examples shown in Figure~\ref{fig:mono_jet_z}. 
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{monojet}}
+\centerline{\includegraphics[width=0.8\linewidth]{monojet}}
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{monoz}}
+\centerline{\includegraphics[width=0.8\linewidth]{monoz}}
 \end{minipage}
-\caption[]{Observed (solid) and expected (dashed) limits on the axial-vector mediator masses obtained in the mono-jet search~\cite{monojet} (left) and the limits on the 2HDM+a model obtained in the mono-$Z$ search~\cite{monoz}. The mono-jet search }
+\caption[]{Left: observed (solid) and expected (dashed) limits on the axial-vector mediator masses obtained in the mono-jet search~\cite{monojet}. The $y$-axis corresponds to the dark matter mass ($m_{\chi}$) while the $x$-axis refers to the axial-vector mass ($m_{Z_{\mathrm{A}}}$). Right: observed (solid) and expected (dashed) limits on the 2HDM+a model obtained in the mono-$Z$ search~\cite{monoz}. The $y$-axis corresponds to the neutral scalar mass ($m_{\mathrm{H}}$) while the $x$-axis refers to the pseudo-scalar mass ($m_{\mathrm{a}}$).}
 \label{fig:mono_jet_z}
 \end{figure}
 
-Both the mono-jet and mono-$Z$ search considers well known detectable standard
+Both the mono-jet and mono-$Z$ search consider well known detectable standard
 model (SM) physic objects. Searches considering less well known SM particles
-such as the Higgs boson or new BSM particles such as a new scalar target the
-specific phase space, facing different experimental challenges. The recent
+such as the Higgs boson or new BSM particles such as new scalar particles target particular phase space, facing different experimental challenges. The recent
 ATLAS mono-Higgs($\rightarrow b\overline{b}$) search~\cite{monoh} analyzes
 events collected by the primary $\et$\ triggers. Events are required to have
-sizable $\et$\ and not contain isolated leptons. The signal regions are categorized by
-the $b$-tagged multiplicity (two or three) and the collinearity of the two
+a significant $\et$\ above the trigger threshold and not contain isolated leptons. The signal regions are categorized by
+the $b$-tagged jet multiplicity (two or three) and the collinearity of the two
 $b$-tagged jets forming the Higgs candidate (merged and resolved). The ATLAS
-mono-s($\rightarrow VV$) search~\cite{monos} probes a similar final state with
-sizable $\et$\ but looks for hadronic boson decays instead of $b$-hadron
-decays. Events must contain two boson tagged jets, and the signal regions are
+mono-s($\rightarrow VV$) search~\cite{monos} probes a similar final state but looks for hadronic boson decays instead of $b$-hadron
+decays. Events must contain two boson-tagged jets, and the signal regions are
 categorized by their collinearity (merged and intermediate) as well. 
 
-Data observation agrees well with the background expectation in both the mono-Higgs($\rightarrow b\overline{b}$) and mono-s($\rightarrow VV$) searches. Up limits are set on specific models as the examples shown in Figure~\ref{fig:mono_h_s}.      
+Data observation agrees well with the background expectation in both the mono-Higgs($\rightarrow b\overline{b}$) and mono-s($\rightarrow VV$) searches. Upper limits are set on specific models as the examples shown in Figure~\ref{fig:mono_h_s}.      
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{monoh}}
+\centerline{\includegraphics[width=0.8\linewidth]{monoh}}
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{monos}}
+\centerline{\includegraphics[width=0.8\linewidth]{monos}}
 \end{minipage}
-\caption[]{Observed (solid) and expected (dashed) limits on the 2HDM+a model obtained in the mono-H($\rightarrow b\overline{b}$) search~\cite{monoh} (left) and the limits on the dark Higgs model obtained in the mono-s($\rightarrow VV$) search~\cite{monos} (right).}
+\caption[]{Left: observed (solid) and expected (dashed) limits on the 2HDM+a model obtained in the mono-H($\rightarrow b\overline{b}$) search~\cite{monoh}. The $y$-axis corresponds to the heavy Higgs boson mass ($m_{\mathrm{A}}$) and the $x$-axis refers to the pseudo-scalar mass $m_{\mathrm{a}}$. Right: observed (solid) and expected (dashed) limits on the dark Higgs model obtained in the mono-s($\rightarrow VV$) search~\cite{monos}. The $y$-axis corresponds to the dark Higgs boson mass ($m_{\mathrm{s}}$) and the $x$-axis refers to the $Z^{\prime}$ mass $m_{Z^{\prime}}$.}
 \label{fig:mono_h_s}
 \end{figure}
 
-\subsection{Dark photon search in the VBF channel}
+\subsection{Dark photon search in the vector boson fusion (VBF) channel}
 
 As the most recently discovered SM particle, the Higgs boson opens up an
 interesting avenue for DM search, not only because it can be produced in
 association with DM particles but also it may decay to DM particles. The
-Higgs$\rightarrow inv$) branching ratio is a critical channel to study the
-phase space where $m_{i\mathrm{DM}} < \frac{1}{2}m_{\mathrm{H}}$. The combined
-Higgs$\rightarrow inv$ branching ratio measurement~\cite{hiv} sets a stringent
+invisible Higgs decay branching ratio is a critical channel to study the
+phase space where $m_{\mathrm{DM}} < \frac{1}{2}m_{\mathrm{H}}$. The invisible Higgs decay branching ratio measurement~\cite{hinv} sets a stringent
 upper limit of 0.11 at 95\% CL. Recent ATLAS~\cite{atlasvbf} and
 CMS~\cite{cmsvbf} searches explore another unique scenario where the Higgs boson
-decays to a dark photon and a photon, which gives sizable $\et$\ and a photon
+decays to a dark photon and a photon, which gives a significant $\et$\ and a photon
 in the final state. Both searches consider the VBF production channel given its
 larger cross section, applying similar event selections such as containing VBF
 jets and lepton veto. The $\mt$\ between the photon and the $\ptmiss$\ is used
 as the discriminant variable to define the signal regions. 
 
-No significant deviations are observed in neither searches and up limits are set on $\sigma_{\mathrm{VBF}}\times B(H\rightarrow\gamma+inv)$ as shown in Figure~\ref{fig:vbf}.It is worth mentioning that ATLAS applies a lower photon $p_{\mathrm{T}}$ threshold and
-additional jet centrality cuts, resulting in stronger exclusion limits.  
+No significant deviations are observed in both searches and upper limits are set on $\sigma_{\mathrm{VBF}}\times B(H\rightarrow\gamma+inv)$ as shown in Figure~\ref{fig:vbf}. It is worth mentioning that ATLAS applies a lower photon $p_{\mathrm{T}}$ threshold and
+additional jet centrality requirements, resulting in stronger exclusion limits.  
 
 \begin{figure} [htb]
 \begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{cmsvbf}}
+\centerline{\includegraphics[width=0.8\linewidth]{cmsvbf}}
 \end{minipage}
-\begin{minipage}{0.45\linewidth}
-\centerline{\includegraphics[width=0.9\linewidth]{atlasvbf}}
+\begin{minipage}{0.5\linewidth}
+\centerline{\includegraphics[width=1.0\linewidth]{atlasvbf}}
 \end{minipage}
-\caption[]{Observed (solid) and expected (dashed) limits on $\sigma_{\mathrm{VBF}}\times B(H\rightarrow\gamma+inv)$ obtained in the CMS~\cite{cmsvbf} (left) and ATLAS~\cite{atlasvbf} (right) search.}
+\caption[]{Observed (solid) and expected (dashed) limits on $\sigma_{\mathrm{VBF}}\times B(H\rightarrow\gamma+inv)$ obtained in the CMS~\cite{cmsvbf} (left) and ATLAS~\cite{atlasvbf} (right) search. The $x$-axis refers to the Higgs boson mass ($m_{\mathrm{H}}$).}
 \label{fig:vbf}
 \end{figure}
 
 \subsection{DM interpretations in SUSY searches}
 
-R-parity conserving (RPC) SUSY predicts a stable lightest supersymmetric particle (LSP), which is a good DM candidate. SUSY searches targeting this
+R-parity conserving (RPC) SUSY predicts a stable lightest supersymmetric
+particle (LSP), which is a good DM candidate. SUSY searches targeting this
 scenario usually requires large $\et$ and high jet ($b$-tagged jet)
-multiplicity. Certain DM models may share similar final states. In a recent
-ATLAS SUSY search~\cite{dmbb}, dedicated signal regions are constructed and
-optimized for DM particles produced in association with a pair of $b$-quarks. Event selections include $\et$\, $b$-jet multiplicity and lepton veto. In addition, specialized variables are applied to optimize individual signal regions. The background prediction agrees well with the data, therefore up limits are set on the DM production cross section as shown in Figure~\ref{fig:dmbb}.   
+multiplicity. Certain DM models share similar final states. In a recent ATLAS
+SUSY search~\cite{dmbb}, dedicated signal regions are constructed and optimized
+for DM particles produced in association with a pair of $b$-quarks. Event
+selections include $\et$, $b$-jet multiplicity and lepton veto. In addition,
+specialized variables exploring the angular correlations are applied to optimize individual signal regions. The
+background prediction agrees well with the data, therefore upper limits are set
+on the DM production cross section as shown in Figure~\ref{fig:dmbb}.   
 
 \begin{figure} [htb]
 \centerline{\includegraphics[width=0.5\linewidth]{DMBB}}
-\caption[]{Observed (solid) and expected (dashed) limits on the DM cross section obtained in the ATLAS SUSY search~\cite{dmbb}.}
+\caption[]{Observed (solid) and expected (dashed) limits on the DM cross section obtained in the ATLAS SUSY search~\cite{dmbb}. The $x$-axis refers to the mediator mass ($m_{\mathrm{a}}$) and the $y$-axis is the cross-section divided by the theoretical prediction.}
 \label{fig:dmbb}
 \end{figure}
 
 \section{Conclusions}
 
-LHC has explored a very large phase space where DM could have existed.
-Recent theoretical development encourages searches to look at more specific
-final states in addition to the inclusive ones and several new results from
-both CMS and ATLAS already extended the scope of the DM search program to new
-horizons. There are still many ongoing full Run 2 DM searches that will further
-broaden the coverage. Both experiments have learned great lessons and will be better prepared for Run 3. More dedicated triggers and reconstruction technologies are being developed to improve the search sensitivities. The hunt is still on!
+The LHC experiments have explored a very large phase space where DM could have existed.  Recent
+theoretical development encourages searches to look at more specific final
+states in addition to the inclusive ones and several new results from both CMS
+and ATLAS already extended the scope of the DM search program to new horizons.
+There are still many ongoing full Run 2 DM searches that will further broaden
+the coverage. More dedicated triggers and reconstruction technologies are
+being developed to improve the search sensitivities. 
 
 \section*{References}
 
